@@ -1,0 +1,10 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\image3.o"
+".\objects\firstright3.o"
+".\objects\imagegover.o"
+".\objects\imagewon.o"
+--strict --scatter ".\Objects\main.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\main.map" -o .\Objects\main.axf
